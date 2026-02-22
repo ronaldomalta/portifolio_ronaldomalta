@@ -179,6 +179,8 @@ h1 {
     padding: 12px 24px;
     border-radius: 6px;
     font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -198,7 +200,6 @@ h1 {
     border-color: var(--text-main);
 }
 
-/* BOTÃO BAIXAR CURRÍCULO */
 .btn-cv {
     background: transparent;
     border: 1px solid var(--accent);
@@ -225,7 +226,8 @@ h1 {
     background: #0f0f0f;
 }
 
-h2 {
+/* Linha roxa só nas sections */
+.section h2 {
     font-size: 2rem;
     margin-bottom: 40px;
     border-left: 4px solid var(--accent);
@@ -376,9 +378,12 @@ footer {
     border-top: 1px solid #222;
 }
 
+/* Remove linha roxa do footer */
 footer h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    border: none;
+    padding-left: 0;
 }
 
 footer p {
