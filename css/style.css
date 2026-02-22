@@ -281,7 +281,100 @@ h1 {
     font-weight: 600;
     font-size: 1.1rem;
 }
+/* ===============================
+   EXPERIENCE COMPACT
+================================ */
+.exp-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+.exp-item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid #222;
+    transition: 0.3s ease;
+}
+
+.exp-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+.exp-item.compact {
+    padding: 24px;
+}
+
+/* topo com logo + texto */
+.exp-top {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+/* logo pequena tipo projeto */
+.exp-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: #111;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.exp-main h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.exp-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.exp-main p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* parte de aprendizados */
+.exp-learned {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #222;
+}
+
+.exp-learned strong {
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.exp-learned ul {
+    margin-top: 8px;
+    padding-left: 18px;
+}
+
+.exp-learned li {
+    margin-bottom: 6px;
+    color: var(--text-muted);
+}
+
+.exp-learned li::marker {
+    color: var(--accent);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .exp-top {
+        flex-direction: column;
+    }
+
+    .exp-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
 /* ===============================
    PROJECTS
 ================================ */
