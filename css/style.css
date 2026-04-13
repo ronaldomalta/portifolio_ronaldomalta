@@ -522,3 +522,123 @@ footer p {
         margin-bottom: 30px;
     }
 }
+
+/* Layout das Colunas */
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Estilo das Badges */
+.skill-level {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Cores por nível */
+.avançado {
+    background-color: #a855f7; /* Roxo principal */
+    color: #fff;
+}
+
+.intermediário {
+    border: 1px solid #a855f7;
+    color: #a855f7;
+}
+
+.básico {
+    color: #888;
+    border: 1px solid #444;
+}
+/* Container principal de certificados */
+.cert-grid {
+    display: flex;
+    justify-content: center; /* Centraliza enquanto houver poucos */
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cert-card {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px; /* Um pouco maior por ser o único */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+    transform: translateY(-5px);
+}
+
+.cert-tag {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.cert-info h4 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+.cert-info p {
+    color: #b3b3b3;
+}
+
+.cert-date {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.btn-cert {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #a855f7;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-cert:hover {
+    background-color: #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
