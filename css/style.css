@@ -642,3 +642,60 @@ footer p {
     background-color: #a855f7;
     box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
 }
+.arsenal-container {
+    max-height: 500px; /* Ajuste essa altura conforme o que você quer que apareça primeiro */
+    overflow-y: auto;  /* Faz o scroll aparecer apenas se o conteúdo for maior que a altura */
+    padding-right: 15px; /* Espaço para a barra não ficar colada no texto */
+}
+
+/* Personalização da barra de scroll para combinar com seu tema roxo */
+.arsenal-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.arsenal-container::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Cor do fundo da barra */
+    border-radius: 10px;
+}
+
+.arsenal-container::-webkit-scrollbar-thumb {
+    background: #8257e5; /* O roxo que você usa no layout */
+    border-radius: 10px;
+}
+
+.arsenal-container::-webkit-scrollbar-thumb:hover {
+    background: #9466ff; /* Um roxo mais claro ao passar o mouse */
+}
+/* 1. Definimos uma altura fixa para as listas e ativamos o scroll */
+.skill-list {
+    max-height: 300px; /* Ajuste este valor para mostrar mais ou menos itens antes do scroll */
+    overflow-y: auto;  /* Ativa o scroll vertical quando necessário */
+    padding-right: 10px; /* Espaço para a barra de scroll não cobrir o texto */
+    list-style: none;
+}
+
+/* 2. Personalização da Barra de Rolagem (Estilo Moderno/Gamer) */
+.skill-list::-webkit-scrollbar {
+    width: 6px; /* Largura da barra */
+}
+
+.skill-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05); /* Fundo da trilha quase transparente */
+    border-radius: 10px;
+}
+
+.skill-list::-webkit-scrollbar-thumb {
+    background: #8257e5; /* Cor roxa principal do seu tema */
+    border-radius: 10px;
+}
+
+.skill-list::-webkit-scrollbar-thumb:hover {
+    background: #9466ff; /* Cor quando passa o mouse */
+}
+
+/* Opcional: Efeito visual para indicar que tem mais conteúdo abaixo */
+.skill-category {
+    position: relative;
+    border-bottom: 2px solid rgba(130, 87, 229, 0.2);
+    padding-bottom: 10px;
+}
