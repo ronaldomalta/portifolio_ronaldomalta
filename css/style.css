@@ -699,3 +699,25 @@ footer p {
     border-bottom: 2px solid rgba(130, 87, 229, 0.2);
     padding-bottom: 10px;
 }
+
+/* ordem dos niveis 
+/* Define que a lista é um container flexível em coluna */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Avançado (Roxo sólido) - Fica no topo */
+.skill-list li:has(.avançado) {
+    order: 1;
+}
+
+/* Intermediário (Borda roxa) - Fica no meio */
+.skill-list li:has(.intermediário) {
+    order: 2;
+}
+
+/* Básico (Simples) - Fica por último */
+.skill-list li:has(.básico) {
+    order: 3;
+}
