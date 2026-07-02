@@ -837,3 +837,10 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.skill-stars {
+    color: #f5c542;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
