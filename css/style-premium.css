@@ -617,40 +617,48 @@ h1 {
     border-bottom: none;
 }
 
-.skill-stars {
-    color: #f5c542;
-    font-size: 0.82rem;
-    letter-spacing: 1px;
-    font-weight: 800;
-    white-space: nowrap;
-    opacity: 0.9;
-    text-shadow: 0 0 12px rgba(245, 197, 66, 0.18);
-}
-
+/* Knowledge levels
+   Hierarchy: Advanced > Intermediate > Basic > Academic */
 .skill-level {
-    font-size: 0.72rem;
-    padding: 4px 9px;
+    min-width: 94px;
+    text-align: center;
+    font-size: 0.68rem;
+    line-height: 1;
+    padding: 7px 10px;
     border-radius: 999px;
-    font-weight: 800;
+    font-weight: 850;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
-.avançado {
+/* 1 - Advanced: highest practical level */
+.skill-level.advanced {
     background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    border: 1px solid var(--accent-hover);
     color: #fff;
+    box-shadow: 0 0 16px rgba(124, 58, 237, 0.20);
 }
 
-.intermediário {
+/* 2 - Intermediate */
+.skill-level.intermediate {
+    background: var(--accent-soft);
     border: 1px solid var(--accent-border);
     color: #c4b5fd;
-    background: var(--accent-soft);
 }
 
-.básico,
-.Básico {
-    color: var(--text-muted);
+/* 3 - Basic */
+.skill-level.basic {
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--border-color);
-    background: rgba(255,255,255,0.03);
+    color: var(--text-muted);
+}
+
+/* 4 - Academic: currently learning/studying */
+.skill-level.academic {
+    background: rgba(59, 130, 246, 0.10);
+    border: 1px solid rgba(96, 165, 250, 0.40);
+    color: #93c5fd;
 }
 
 /* Keep old arsenal container safe, but remove forced scroll */
@@ -976,8 +984,4 @@ footer p {
         font-size: 0.92rem;
     }
 
-    .skill-stars {
-        font-size: 0.76rem;
-        letter-spacing: 0.5px;
-    }
 }
