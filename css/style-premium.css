@@ -985,3 +985,18 @@ footer p {
     }
 
 }
+
+/* ClipForge AI — projeto em destaque */
+.clipforge-featured { border-color: rgba(236, 93, 178, .38); }
+.clipforge-featured:hover { border-color: rgba(255, 133, 167, .8); }
+.clipforge-cover {
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 76% 30%, rgba(255, 156, 122, .48), transparent 38%),
+                linear-gradient(120deg, #171024, #572b53 60%, #df797e);
+}
+.clipforge-cover-content { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 7px; }
+.clipforge-cover-content strong { font-size: clamp(1.5rem, 3vw, 2.1rem); letter-spacing: -.05em; }
+.clipforge-cover-content strong span { color: #ff8aab; }
+.clipforge-cover-content small { color: #f2c6dc; font-size: .68rem; font-weight: 800; letter-spacing: .23em; }
+.clipforge-spark { font-size: 2.1rem; color: #ff89b2; text-shadow: 0 0 24px rgba(255, 111, 179, .8); }
+.clipforge-label { display: inline-block; margin-bottom: 10px; color: #ffa0bf; font-size: .72rem; font-weight: 800; letter-spacing: .08em; }
